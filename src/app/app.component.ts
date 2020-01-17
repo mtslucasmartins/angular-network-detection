@@ -16,7 +16,7 @@ export class AppComponent {
   constructor(private networkDetectionService: NetworkDetectionService) {
     networkDetectionService.monitor().subscribe((e) => {
       console.log(e);
-      this.online = e.hasNetworkConnection;
+      this.online = e.hasNetworkConnection && e.hasInternetAccess;
     });
   }
 
