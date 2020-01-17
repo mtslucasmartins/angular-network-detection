@@ -13,7 +13,7 @@ p {
   text-align: center;
 }
 
-i {
+p > i {
   font-size: 90px;
   font-weight: 300;
 }
@@ -30,7 +30,7 @@ a {
   transition: all 0.5s;
 }
 
-p i {
+p > i {
   font-size: 1.5em;
   /* color: #228DFF; */
   color: #666666;
@@ -38,17 +38,17 @@ p i {
   transition: linear 1s;
 }
 
-p i:hover {
+p > i:hover {
   color: #ffffff;
 }
 
-p i:hover {
+p > i:hover {
   -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
   -moz-animation: neon2 1.5s ease-in-out infinite alternate;
   animation: neon2 1.5s ease-in-out infinite alternate;
 }
 
-p.online i {
+p.online > i {
   color: #ffffff;
   -webkit-animation: neon2 1.5s ease-in-out infinite alternate;
   -moz-animation: neon2 1.5s ease-in-out infinite alternate;
