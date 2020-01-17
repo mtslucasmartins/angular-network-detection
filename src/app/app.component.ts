@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { NetworkDetectionService } from './shared/network-detection/network-detection.service';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,12 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'network-detection';
+
+  constructor(private networkDetectionService: NetworkDetectionService) {
+    networkDetectionService.monitor().subscribe((e) => {
+      console.log(e);
+
+    });
+  }
+
 }
