@@ -59,7 +59,7 @@ export class NetworkDetectionService implements OnDestroy {
   private static DEFAULT_OPTIONS: ConnectionServiceOptions = {
     enableHeartbeat: true,
     heartbeatUrl: '/assets/ping.json',
-    heartbeatInterval: 30000,
+    heartbeatInterval: 3000,
     heartbeatRetryInterval: 1000,
     requestMethod: 'head'
   };
